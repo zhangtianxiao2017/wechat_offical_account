@@ -27,6 +27,7 @@ public class WechatPublicNumberAccess {
         String signature = servletRequest.getParameter("signature");
         String timestamp = servletRequest.getParameter("timestamp");
         String nonce = servletRequest.getParameter("nonce");
+        String echostr = servletRequest.getParameter("echostr");
         String token = "ztx";
 
         // 对三个字段按字典排序
@@ -47,7 +48,7 @@ public class WechatPublicNumberAccess {
         try {
             String shaEncode = EncryptionUtil.shaEncode(sortedString.toString());
             if(shaEncode.equals(signature)){
-                return "true";
+                return echostr;
             }
         } catch (Exception e) {
             e.printStackTrace();
