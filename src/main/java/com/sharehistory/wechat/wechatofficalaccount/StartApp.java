@@ -1,4 +1,4 @@
-package com.sharehistory.wechat.wechatpublicnumber;
+package com.sharehistory.wechat.wechatofficalaccount;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

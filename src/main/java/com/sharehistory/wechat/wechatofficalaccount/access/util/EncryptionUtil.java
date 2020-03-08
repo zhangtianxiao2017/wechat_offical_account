@@ -1,4 +1,4 @@
-package com.sharehistory.wechat.wechatpublicnumber.access.util;
+package com.sharehistory.wechat.wechatofficalaccount.access.util;
 
 import java.security.MessageDigest;
 

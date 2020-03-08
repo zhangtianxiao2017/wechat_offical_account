@@ -1,6 +1,6 @@
-package com.sharehistory.wechat.wechatpublicnumber.access;
+package com.sharehistory.wechat.wechatofficalaccount.access;
 
-import com.sharehistory.wechat.wechatpublicnumber.access.util.EncryptionUtil;
+import com.sharehistory.wechat.wechatofficalaccount.access.util.EncryptionUtil;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
