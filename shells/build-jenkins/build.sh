@@ -1,9 +1,9 @@
 
 mvn clean package
 
-dockerName = "wechat_public_access"
-dockerPort = "9000"
-dockerJarVolumn = /home/ubuntu/.jenkins/workspace/wechat_public_access/target/public_access-1.0.jar
+dockerName="wechat_public_access"
+dockerPort="9000"
+dockerJarVolumn=/home/ubuntu/.jenkins/workspace/wechat_public_access/target/public_access-1.0.jar
 # 停止并删除现有容器
 
 echo "${dockerName}:容器开始停止"
