@@ -12,4 +12,4 @@ sudo docker rm ${dockerName}
 echo "${dockerName}:容器已停止"
 
 echo "${dockerName}:重新启动容器"
-sudo docker run --name={dockerName} -d -p ${dockerPort}:${dockerPort} -v ${dockerJarVolumnggit}:/jar/app.jar ztx/openjdk:1.0.0
+sudo docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v ${dockerJarVolumnggit}:/jar/app.jar ztx/openjdk:1.0.0
