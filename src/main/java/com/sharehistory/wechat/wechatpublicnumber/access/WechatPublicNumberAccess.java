@@ -27,10 +27,11 @@ public class WechatPublicNumberAccess {
         String signature = servletRequest.getParameter("signature");
         String timestamp = servletRequest.getParameter("timestamp");
         String nonce = servletRequest.getParameter("nonce");
+        String token = "ztx";
 
         // 对三个字段按字典排序
         ArrayList<String> storeList = new ArrayList<>();
-        storeList.add(signature);
+        storeList.add(token);
         storeList.add(timestamp);
         storeList.add(nonce);
         Collections.sort(storeList);
