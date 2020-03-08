@@ -12,7 +12,7 @@ mkdir ${projectLocation}/${dockerName}
 mkdir ${projectLocation}/${dockerName}/jar
 
 # 复制打包后的jar包
-copy ./target/*.jar ${dockerJarVolumn}/app.jar
+cp ./target/*.jar ${dockerJarVolumn}/app.jar
 
 # 停止并删除现有容器
 echo "${dockerName}:容器开始停止"
