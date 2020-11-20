@@ -56,4 +56,10 @@ public class WechatPublicNumberAccess {
 
         return "false";
     }
+
+    @GetMapping("/interface/test/")
+    public String test(ServletRequest servletRequest){
+
+        return "hello word!!!";
+    }
 }
