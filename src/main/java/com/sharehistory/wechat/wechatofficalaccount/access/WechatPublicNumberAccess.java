@@ -62,4 +62,12 @@ public class WechatPublicNumberAccess {
 
         return "hello word!!!";
     }
+
+    @GetMapping("/wx/login")
+    public String login(ServletRequest servletRequest){
+       String code = servletRequest.getParameter("code");
+       String phone = servletRequest.getParameter("phone");
+
+       return "小程序服务器正常：" + code + "    === " + phone;
+    }
 }
